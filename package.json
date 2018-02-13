@@ -1,0 +1,18 @@
+{
+  "name": "autosuggest-cache",
+  "version": "0.0.1",
+  "description": "",
+  "main": "application.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node application.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "corser": "^2.0.1",
+    "express": "^4.16.2"
+  }
+}
