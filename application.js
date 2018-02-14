@@ -7,6 +7,7 @@ app.use(corser.create());
 app.use(express.static(__dirname + '/dist'));
 
 app.use('/hello', require('./lib/hello.js')());
+app.use('/cache', require('./lib/cache.js')());
 
 app.options("*", function (req, res) {
   // CORS
