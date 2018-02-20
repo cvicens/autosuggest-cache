@@ -35,9 +35,6 @@ steps:
 
   - name: 'gcr.io/cloud-builders/gcloud'
     args: ['container', 'clusters', 'get-credentials', '--project=$PROJECT_ID', '--zone=us-central1-a', 'autosuggest-cluster-us']
-    env:
-    - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-d'
-    - 'CLOUDSDK_CONTAINER_CLUSTER=autosuggest-cluster-eu'
 
   - name: 'gcr.io/cloud-builders/kubectl'
     args:
