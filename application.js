@@ -6,7 +6,7 @@ app.use(corser.create());
 
 app.use(express.static(__dirname + '/dist'));
 
-app.use('/', require('./lib/health.js')());
+app.use('/health', require('./lib/health.js')());
 app.use('/hello', require('./lib/hello.js')());
 app.use('/cache', require('./lib/cache.js')());
 
