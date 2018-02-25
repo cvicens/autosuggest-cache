@@ -4,6 +4,8 @@ steps:
       'build', 
       '--cache-from',
       'eu.gcr.io/$PROJECT_ID/autosuggest-cache:latest',
+      '--build-arg',
+      'BUILDTIME_GIT_TAG=$TAG_NAME',
       '-f' , './Dockerfile', 
       '--tag=eu.gcr.io/$PROJECT_ID/autosuggest-cache:$TAG_NAME', 
       '.' 
