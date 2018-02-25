@@ -3,7 +3,7 @@ export PROJECT_ID="autosuggest-194816"
 export IMAGE_NAME="autosuggest-cache"
 export CONTAINER_NAME="autosuggest-cache"
 
-export IMAGE_VERSION="v0.1.13" ; git commit -a -m "init" ;git tag -a ${IMAGE_VERSION} -m "version ${IMAGE_VERSION}" ; git push origin master ${IMAGE_VERSION}
+export IMAGE_VERSION="v0.1.14" ; git commit -a -m "init" ;git tag -a ${IMAGE_VERSION} -m "version ${IMAGE_VERSION}" ; git push origin master ${IMAGE_VERSION}
 
 docker build -t eu.gcr.io/$PROJECT_ID/$IMAGE_NAME:$IMAGE_VERSION .
 
